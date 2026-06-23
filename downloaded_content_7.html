@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Collections | INDO WEST LUXURY</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .filter-transition {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .product-card:hover .product-action {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #FAF7F5;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #e2bebb;
+            border-radius: 10px;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "secondary-container": "#fc7271",
+                        "surface-container-high": "#eae8e6",
+                        "on-secondary-container": "#6f0613",
+                        "secondary-fixed": "#ffdad8",
+                        "tertiary": "#662c36",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed": "#410004",
+                        "primary-fixed": "#ffdad7",
+                        "on-surface-variant": "#5a413e",
+                        "on-surface": "#1b1c1b",
+                        "on-secondary-fixed": "#410006",
+                        "on-primary": "#ffffff",
+                        "error-container": "#ffdad6",
+                        "on-secondary-fixed-variant": "#891c22",
+                        "primary-container": "#a61e22",
+                        "on-tertiary-fixed": "#3a0915",
+                        "warm-ivory": "#FAF7F5",
+                        "background": "#fcf9f7",
+                        "tertiary-fixed-dim": "#ffb2bc",
+                        "on-primary-container": "#ffb9b4",
+                        "on-tertiary-container": "#ffb8c1",
+                        "surface-container-highest": "#e5e2e0",
+                        "charcoal-black": "#2D2D2D",
+                        "tertiary-fixed": "#ffd9dd",
+                        "surface": "#fcf9f7",
+                        "outline": "#8e706d",
+                        "secondary": "#a93537",
+                        "inverse-on-surface": "#f3f0ee",
+                        "soft-beige": "#F5F1EE",
+                        "inverse-primary": "#ffb3ad",
+                        "on-error": "#ffffff",
+                        "on-background": "#1b1c1b",
+                        "outline-variant": "#e2bebb",
+                        "surface-container-low": "#f6f3f1",
+                        "on-primary-fixed-variant": "#900a15",
+                        "tertiary-container": "#82424d",
+                        "rose-gold": "#B76E79",
+                        "on-tertiary": "#ffffff",
+                        "surface-container": "#f0edeb",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-bright": "#fcf9f7",
+                        "inverse-surface": "#30302f",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed-variant": "#70343e",
+                        "surface-tint": "#b3282a",
+                        "surface-dim": "#dcd9d8",
+                        "primary": "#83000f",
+                        "primary-fixed-dim": "#ffb3ad",
+                        "error": "#ba1a1a",
+                        "surface-variant": "#e5e2e0",
+                        "secondary-fixed-dim": "#ffb3b0"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "gutter": "24px",
+                        "section-gap": "80px",
+                        "margin-desktop": "64px",
+                        "margin-mobile": "16px",
+                        "unit": "4px"
+                    },
+                    "fontFamily": {
+                        "body-sm": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Playfair Display"],
+                        "label-md": ["Inter"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "display-lg": ["Playfair Display"],
+                        "label-lg": ["Inter"],
+                        "headline-lg": ["Playfair Display"]
+                    },
+                    "fontSize": {
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "label-md": ["12px", {"lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-lg": ["14px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+</head>
+<body class="bg-background text-on-surface font-body-md antialiased">
+<!-- Header (TopNavBar) -->
+<header class="fixed top-0 w-full z-50 bg-background/80 backdrop-blur-md">
+<nav class="flex justify-between items-center w-full px-margin-desktop max-w-7xl mx-auto py-4">
+<div class="flex items-center gap-8">
+<a class="block w-auto h-auto" href="#"><img alt="INDO WEST LUXURY" class="h-24 w-auto object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD2LvbScijyUCvPnZ-L5jv-CG_6SLbDjoYgKCb38dmi7bM3bEPk84OIILPj-d27zW5v4pl46eKimpEPnBqEWk5seuCvMmtCg0prKICTChukTiHhRtnSdAXXROMjvoTrn8BlRZFwsdS72d9pWdA3oajPa8YOoQXvcfhOj2shdKLC1SOBUMKeOW6W4nGCi5v2YqQ3mSWmCGll-6RVYAtEMvBRaCrmWcFz2d-yrWSrdFyqA7i2gix6H-TpbK6ZXzTYQsyB4UvwcyHL5gf"/></a>
+<div class="hidden md:flex gap-6">
+<a class="font-label-lg text-label-lg text-primary border-b border-primary pb-1 transition-colors duration-300" href="#">Collections</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Lookbook</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">About</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors duration-300" href="#">Contact</a>
+</div>
+</div>
+<div class="flex items-center gap-6">
+<div class="hidden lg:flex items-center border-b border-outline-variant py-1">
+<span class="material-symbols-outlined text-on-surface-variant text-xl">search</span>
+<input class="bg-transparent border-none focus:ring-0 text-body-sm placeholder:text-on-surface-variant/50 w-48" placeholder="Search collection..." type="text"/>
+</div>
+<div class="flex items-center gap-4">
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">favorite</button>
+<button class="material-symbols-outlined text-on-surface-variant hover:text-primary transition-colors">shopping_bag</button>
+<button class="hidden md:block bg-primary text-on-primary px-6 py-2 font-label-lg text-label-lg hover:opacity-90 transition-opacity">WhatsApp Inquiry</button>
+</div>
+</div>
+</nav>
+</header>
+<main class="pt-32 pb-section-gap px-margin-desktop max-w-7xl mx-auto">
+<div class="flex flex-col md:flex-row gap-gutter">
+<!-- Sidebar Filters -->
+<aside class="w-full md:w-64 flex-shrink-0 space-y-8 sticky top-32 h-fit max-h-[calc(100vh-160px)] overflow-y-auto custom-scrollbar pr-4">
+<div>
+<h3 class="font-headline-md text-headline-md mb-6 text-charcoal-black">Filters</h3>
+<!-- Categories -->
+<div class="mb-8">
+<p class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant mb-4">Categories</p>
+<div class="flex flex-col gap-3"><label class="flex items-center gap-3 cursor-pointer group">
+<input checked="checked" class="rounded border-outline-variant text-primary focus:ring-primary w-4 h-4" type="checkbox"/>
+<span class="font-body-md text-on-surface group-hover:text-primary transition-colors text-primary font-semibold">Indowestern outfits</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded border-outline-variant text-primary focus:ring-primary w-4 h-4" type="checkbox"/>
+<span class="font-body-md text-on-surface group-hover:text-primary transition-colors">Lehangas</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="rounded border-outline-variant text-primary focus:ring-primary w-4 h-4" type="checkbox"/>
+<span class="font-body-md text-on-surface group-hover:text-primary transition-colors">Salwar suits</span>
+</label></div>
+</div>
+<!-- Colors -->
+<!-- Sizes -->
+<div>
+<p class="font-label-lg text-label-lg uppercase tracking-wider text-on-surface-variant mb-4">Size</p>
+<div class="grid grid-cols-3 gap-2">
+<button class="py-2 border border-outline-variant font-label-md text-label-md hover:border-primary hover:text-primary transition-all">XS</button>
+<button class="py-2 border border-primary bg-soft-beige font-label-md text-label-md text-primary">S</button>
+<button class="py-2 border border-outline-variant font-label-md text-label-md hover:border-primary hover:text-primary transition-all">M</button>
+<button class="py-2 border border-outline-variant font-label-md text-label-md hover:border-primary hover:text-primary transition-all">L</button>
+<button class="py-2 border border-outline-variant font-label-md text-label-md hover:border-primary hover:text-primary transition-all">XL</button>
+</div>
+</div>
+</div>
+</aside>
+<!-- Product Grid -->
+<div class="flex-grow">
+<!-- Grid Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between mb-8 gap-4">
+<h1 class="font-headline-lg text-headline-lg text-charcoal-black">All Collections</h1>
+<div class="flex items-center gap-4">
+<span class="font-label-md text-label-md text-on-surface-variant">SORT BY:</span>
+<div class="relative group">
+<button class="flex items-center gap-2 font-label-lg text-label-lg text-primary border-b border-primary/20 pb-1">
+                                Newest Arrivals
+                                <span class="material-symbols-outlined text-lg">expand_more</span>
+</button>
+<div class="absolute right-0 mt-2 w-48 bg-white border border-outline-variant shadow-xl opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-10">
+<a class="block px-4 py-3 text-body-sm hover:bg-soft-beige transition-colors" href="#">Popularity</a>
+<a class="block px-4 py-3 text-body-sm hover:bg-soft-beige transition-colors" href="#">Price: Low to High</a>
+<a class="block px-4 py-3 text-body-sm hover:bg-soft-beige transition-colors" href="#">Price: High to Low</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Cards Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-12 gap-x-8"><!-- Product 1 -->
+<div class="product-card group cursor-pointer">
+<div class="relative overflow-hidden aspect-[3/4] mb-4 bg-soft-beige">
+<div class="w-full h-full">https://lh3.googleusercontent.com/aida/AP1WRLs6kjEgRzHP0c5qYFffyPsJyb-pe3zDeoCmqYpscc_nmpJi4sVQzkcpMqsCrdYKMoOV6LEwWEFhWUzIWdxdo_WnK3NhIHlR09Yool6fXLm2zkFYpNej5gc88jhDwRwwicTNXfaHxLjzwHFSDVlnu7Li4qbGTG9fZro1EqKhCZaes50_ccUjEMnqLj52Dh-sspu0o52TllZ02B_TPHi7-Sh9LfbsVEK8yvtK2842Fc6N_tuVXAydSt1bYE0U</div>
+<div class="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="product-action absolute bottom-4 left-4 right-4 opacity-0 transform translate-y-4 transition-all duration-300">
+<button class="w-full bg-primary text-on-primary py-3 flex items-center justify-center gap-2 font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-lg">chat</span>
+WhatsApp for Details
+</button>
+</div>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/80 backdrop-blur rounded-full flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors">
+<span class="material-symbols-outlined">favorite</span>
+</button>
+</div>
+<h3 class="font-headline-md text-headline-md text-charcoal-black mb-1 group-hover:text-primary transition-colors">Alter Neck Blouse with Embroidered Plazo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant uppercase tracking-widest">Indowestern Collection</p>
+</div>
+<!-- Product 2 -->
+<div class="product-card group cursor-pointer">
+<div class="relative overflow-hidden aspect-[3/4] mb-4 bg-soft-beige">
+<div class="w-full h-full">https://lh3.googleusercontent.com/aida/AP1WRLtRSKQSARXt_YA_POdZ34CM03R5P31mlGQ6rA7yPG0bJTflA9_c9up74FwKGfg4M0hWDxM-I5s9AGAWAHsZEH_frxWiBEhABrtxVTpd4x8oAHyPSuInwA6-CxMeMQasohakZxoeVjGoXlRuZyIatiTxEIhYXE-M9BfiD6ilR8WvWfxsq-9nJh7PkZmkb6YoeUj5liyBwGl3pBuin5XjLrb7TlXmfe1WXIGX6ESb0KOdx13IjSYh0j5QZpXV</div>
+<div class="product-action absolute bottom-4 left-4 right-4 opacity-0 transform translate-y-4 transition-all duration-300">
+<button class="w-full bg-primary text-on-primary py-3 flex items-center justify-center gap-2 font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-lg">chat</span>
+WhatsApp for Details
+</button>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-charcoal-black mb-1 group-hover:text-primary transition-colors">Alter Neck Peplum Top with Plazo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant uppercase tracking-widest">Indowestern Collection</p>
+</div>
+<!-- Product 3 -->
+<div class="product-card group cursor-pointer">
+<div class="relative overflow-hidden aspect-[3/4] mb-4 bg-soft-beige">
+<div class="w-full h-full">https://lh3.googleusercontent.com/aida/AP1WRLvR4tY8UDeUkr3qIL8CpgPni0PfTQ6lb7vZZCZjPv_ujqOWCs8XYar2_6SQgK7UvXNv_xhVSU7Ap1sfCUV40X-Xp_zX7kjA59WVs182_r2uyUWwliXhmUmi2hw4JhkekzSeNMFQ1xojZSlvN1LfLU2tWv1f5uECcH2Oq_VdN6ZCcXpQMkMq786x6phys9HYYynfQQVlf02UL1JAayZMy4lYusKdepWAVC5F6tQeHh5hmMYAMyYeLfJymCDU</div>
+<div class="product-action absolute bottom-4 left-4 right-4 opacity-0 transform translate-y-4 transition-all duration-300">
+<button class="w-full bg-primary text-on-primary py-3 flex items-center justify-center gap-2 font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-lg">chat</span>
+WhatsApp for Details
+</button>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-charcoal-black mb-1 group-hover:text-primary transition-colors">Brocade Fabric Jacket Crop Top Plazo</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant uppercase tracking-widest">Indowestern Collection</p>
+</div>
+<!-- Product 4 -->
+<div class="product-card group cursor-pointer">
+<div class="relative overflow-hidden aspect-[3/4] mb-4 bg-soft-beige">
+<div class="w-full h-full">https://lh3.googleusercontent.com/aida/AP1WRLuk7YqQsiBIn2GH7toreg9oC63SRiGIot4uNi0XD7x_P9TACrbfn8zA8tBrVXnJKpA_-UhGUO5Vm6zDIVi1YscOn1nCd9euNB_O9Kc3YFolY7C-wiGMx_t97F7aHuvKG953Fk48IfWoXb56TGqO7vvzBTCxi_gyww9_p7p0lgqqQnQAhtC16hrZj2VFsx9uYiSq0yKgDwmryvlLlwR7u6y2Nf2RLcMtFAV0MSU1SIepBfYxF7mUJIvXHIAh</div>
+<div class="product-action absolute bottom-4 left-4 right-4 opacity-0 transform translate-y-4 transition-all duration-300">
+<button class="w-full bg-primary text-on-primary py-3 flex items-center justify-center gap-2 font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-lg">chat</span>
+WhatsApp for Details
+</button>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-charcoal-black mb-1 group-hover:text-primary transition-colors">Cape Crop Top with Dhoti Skirt</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant uppercase tracking-widest">Indowestern Collection</p>
+</div>
+<!-- Product 5 -->
+<div class="product-card group cursor-pointer">
+<div class="relative overflow-hidden aspect-[3/4] mb-4 bg-soft-beige">
+<div class="w-full h-full">https://lh3.googleusercontent.com/aida/AP1WRLvOonh9rOJ0TopUmvHyM6XxHp-8zRpx9v-1-hVkaTPXsJ57bKvXW8L3b4-pkxkBpcqUMecrJjjQC-fAf3tlMCFgmkmVCyh5eOCW0MfGtDvzDcCujla2tPN42u9aSkhj1kqDWCJEcU932Xhhxn4sTtNuC4T1b8wSLhGlTkYAsSdsgUOEMd8w7N8d5hT5t8C3cuxF8AI0vPBrUP3BDJ5t_STqqLSLcsfc7sHSG4lPkOaXAezE_NM7cJHCywu9</div>
+<div class="product-action absolute bottom-4 left-4 right-4 opacity-0 transform translate-y-4 transition-all duration-300">
+<button class="w-full bg-primary text-on-primary py-3 flex items-center justify-center gap-2 font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-lg">chat</span>
+WhatsApp for Details
+</button>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-charcoal-black mb-1 group-hover:text-primary transition-colors">Corset Blouse with Dhoti Skirt</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant uppercase tracking-widest">Indowestern Collection</p>
+</div>
+<!-- Product 6 -->
+<div class="product-card group cursor-pointer">
+<div class="relative overflow-hidden aspect-[3/4] mb-4 bg-soft-beige">
+<div class="w-full h-full">https://lh3.googleusercontent.com/aida/AP1WRLtEtWQdaumSFphyXZNRc2lnZj8xGatgd5nDYqFu2rzx2kmQcNH47wD8KlaZ5SW8wpz9LxKfB0D663mM2Xal0nmDvfQtOcR5Cn2s4QLRisnlQna74uJwvtC8-niU9bZ-LA-d4PEF1Mfk2mYcUjphG172TeUGGavlAcKdWys64JZ7ndtVfyGJ43ofGAeYAKxkh1Qsjy8JxE2QxJqVl8ihvBuPpkkRO_PlXVQ2zdoI32g2THJVC9MJWv4IrpU</div>
+<div class="product-action absolute bottom-4 left-4 right-4 opacity-0 transform translate-y-4 transition-all duration-300">
+<button class="w-full bg-primary text-on-primary py-3 flex items-center justify-center gap-2 font-label-lg text-label-lg">
+<span class="material-symbols-outlined text-lg">chat</span>
+WhatsApp for Details
+</button>
+</div>
+</div>
+<h3 class="font-headline-md text-headline-md text-charcoal-black mb-1 group-hover:text-primary transition-colors">Dhoti Skirt with Cape Alterneck</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant uppercase tracking-widest">Indowestern Collection</p>
+</div></div>
+<!-- Load More Section -->
+<div class="mt-section-gap flex flex-col items-center gap-6">
+<div class="w-full h-px bg-outline-variant/30 max-w-md"></div>
+<button class="group flex flex-col items-center gap-2">
+<span class="font-label-lg text-label-lg text-on-surface-variant group-hover:text-primary transition-colors tracking-[0.2em] uppercase">Load More</span>
+<span class="material-symbols-outlined text-primary group-hover:translate-y-1 transition-transform">expand_more</span>
+</button>
+</div>
+</div>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-low border-t border-outline-variant">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter px-margin-desktop py-section-gap max-w-7xl mx-auto">
+<div class="md:col-span-4">
+<a class="font-headline-md text-headline-md text-primary mb-6 block uppercase tracking-widest" href="#">INDO WEST</a>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-6 leading-relaxed max-w-xs">
+                    Celebrating the intersection of traditional Indian craftsmanship and contemporary Western silhouettes. Each piece is a testament to timeless luxury.
+                </p>
+<div class="flex gap-4">
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all duration-300">
+<span class="material-symbols-outlined text-lg">public</span>
+</button>
+<button class="w-10 h-10 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-white hover:border-primary transition-all duration-300">
+<span class="material-symbols-outlined text-lg">mail</span>
+</button>
+</div>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-lg text-label-lg text-charcoal-black uppercase mb-6 tracking-wider">Quick Links</h4>
+<ul class="space-y-4">
+<li class=""><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Collections</a></li>
+<li class=""><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Lookbook</a></li>
+<li class=""><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">About</a></li>
+<li class=""><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Contact</a></li>
+</ul>
+</div>
+<div class="md:col-span-2">
+<h4 class="font-label-lg text-label-lg text-charcoal-black uppercase mb-6 tracking-wider">Legal</h4>
+<ul class="space-y-4">
+<li class=""><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Shipping Policy</a></li>
+<li class=""><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy Policy</a></li>
+<li class=""><a class="font-body-sm text-body-sm text-on-surface-variant hover:text-primary transition-colors" href="#">Terms of Use</a></li>
+</ul>
+</div>
+<div class="md:col-span-4">
+<h4 class="font-label-lg text-label-lg text-charcoal-black uppercase mb-6 tracking-wider">Join Our World</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mb-4">Be the first to know about new collection launches and exclusive lookbooks.</p>
+<div class="flex">
+<input class="bg-white border-outline-variant focus:ring-primary focus:border-primary w-full text-body-sm px-4 py-3" placeholder="Email Address" type="email"/>
+<button class="bg-primary text-on-primary px-6 py-3 font-label-lg text-label-lg hover:opacity-90 transition-opacity">JOIN</button>
+</div>
+</div>
+</div>
+<div class="px-margin-desktop py-8 border-t border-outline-variant max-w-7xl mx-auto text-center">
+<p class="font-label-md text-label-md text-on-surface-variant tracking-widest">© 2024 INDO WEST LUXURY. ALL RIGHTS RESERVED.</p>
+</div>
+</footer>
+<!-- Micro-interaction Scripts -->
+<script>
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('shadow-sm');
+            } else {
+                header.classList.remove('shadow-sm');
+            }
+        });
+
+        // Filter functionality (Simulation)
+        const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+        checkboxes.forEach(checkbox => {
+            checkbox.addEventListener('change', (e) => {
+                const label = e.target.nextElementSibling;
+                if(e.target.checked) {
+                    label.classList.add('text-primary', 'font-semibold');
+                    label.classList.remove('text-on-surface');
+                } else {
+                    label.classList.remove('text-primary', 'font-semibold');
+                    label.classList.add('text-on-surface');
+                }
+            });
+        });
+
+        // Add to favorite toggle
+        const favButtons = document.querySelectorAll('.product-card button .material-symbols-outlined');
+        favButtons.forEach(btn => {
+            btn.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const icon = e.target;
+                if(icon.style.fontVariationSettings.includes("'FILL' 1")) {
+                    icon.style.fontVariationSettings = "'FILL' 0, 'wght' 300";
+                    icon.classList.remove('text-primary');
+                } else {
+                    icon.style.fontVariationSettings = "'FILL' 1, 'wght' 300";
+                    icon.classList.add('text-primary');
+                }
+            });
+        });
+    </script>
+</body></html>

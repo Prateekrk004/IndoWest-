@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,450&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #A61E22;
+  --color-secondary: #8B1E24;
+  --color-rose-gold: #CAA472;
+  --color-warm-ivory: #FAF7F5;
+  --color-soft-beige: #F5F1EE;
+  --color-charcoal-black: #2D2D2D;
+  
+  --font-display: "Playfair Display", "Cormorant Garamond", serif;
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Poppins", "Inter", sans-serif;
+}
+
+/* Custom extra utilities to create luxurious boutique editorial atmosphere */
+.font-editorial {
+  font-family: var(--font-display);
+}
+
+.text-gold-gradient {
+  background: linear-gradient(135deg, #E5C28C 0%, #B8965F 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Custom Scrollbar for Luxury Aesthetics */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #FAF7F5;
+}
+::-webkit-scrollbar-thumb {
+  background: #CAA472;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #8B1E24;
+}
+
+/* Page entrance animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.glassmorphism {
+  background: rgba(250, 247, 245, 0.75);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(202, 164, 114, 0.15);
+}
+
+.glassmorphism-dark {
+  background: rgba(45, 45, 45, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(202, 164, 114, 0.1);
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100%;
+  width: 100%;
+}

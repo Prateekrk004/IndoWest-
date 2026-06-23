@@ -1,0 +1,339 @@
+
+<!-- TopNavBar -->
+<header class="bg-background/80 dark:bg-background/80 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 docked full-width top-0 sticky z-50">
+<nav class="flex justify-between items-center w-full px-margin-desktop py-4 max-w-[1440px] mx-auto">
+<div class="flex items-center space-x-gutter">
+<a class="font-display-lg text-headline-md text-primary dark:text-primary-fixed-dim tracking-tighter" href="#">INDO WEST</a>
+</div>
+<div class="hidden md:flex items-center space-x-10 font-body-md text-label-lg uppercase tracking-widest">
+<a class="text-primary dark:text-primary-fixed-dim font-bold border-b-2 border-primary pb-1" href="#">Collections</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors duration-300" href="#">Lookbook</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors duration-300" href="#">About</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors duration-300" href="#">Gallery</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-primary hover:opacity-80 transition-all duration-300">favorite</button>
+<button class="material-symbols-outlined text-primary hover:opacity-80 transition-all duration-300">shopping_bag</button>
+<button class="bg-primary text-on-primary px-6 py-2 text-label-lg uppercase tracking-widest hover:opacity-90 active:scale-95 transition-all">WhatsApp Us</button>
+</div>
+</nav>
+</header>
+<!-- Section 1: Hero -->
+<section class="relative h-[90vh] flex items-center overflow-hidden fade-in">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full parallax-container bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB2O5UmxiZvTps3D2VovezQdsetB3U_r8FiUGTl7TgSgxAQC9GZUnYDg3p9NRLrhyLbKjuseCbmpkfuKQQKNKXQz51yvjo25SQ7_GOJGDoag4_2hGV6KEDnz6nSAQUrpbWsUqjC4CJ2NAVS7g73_X4UcyNN1uSIZ_DsUKg0KBvaYLsDtMPqw6X9PXF0QnsMFmLHVjfOu5fOB10P6I0eH32eq3HnPOV8nVVFvSd83HvEng4NBHbUi84RBSvGUg3FFQkiNPiq3a6WtcaE');"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-warm-ivory/60 via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 px-margin-desktop max-w-[1440px] mx-auto w-full fade-in">
+<div class="max-w-2xl">
+<img alt="INDO WEST Logo" class="w-48 mb-8 opacity-90" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAynDBxCMYxZWoPRF97uxZgWPKXywhUYKCoTJHldBiaUJ9etXD0-ngC7Oy24oW9nm0QErM-98RaMGnBJfAy-g62QM9bzcmXCWS8ySKzQjp0E9AqMclVcEaZWEysFtmzWunmvIGlT6kvVUrVW6-CrC6DrgSoE6PAuhh0AbYxG2GpihWy_A6gW1yeQ1lhH-uC2xl5bclJh8czo2dkvD5VAOenEGwxJkAPJSfJA1gZ6BlJaxWMz4e3cRoXr1mokekWGCIbWmOHezx2Sx5m">
+<h1 class="font-display-lg text-display-lg text-primary mb-6 leading-tight">Timeless Fashion,<br>Modern Elegance</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
+                    Discover beautifully curated collections designed for every occasion. Experience the fusion of traditional craftsmanship and contemporary silhouettes.
+                </p>
+<div class="flex flex-wrap gap-4">
+<a href="{{DATA:SCREEN:SCREEN_11}}" class="bg-primary text-on-primary px-10 py-4 font-label-lg uppercase tracking-widest hover:shadow-xl transition-all inline-block text-center">Explore Collection</a>
+<button class="border border-primary text-primary px-10 py-4 font-label-lg uppercase tracking-widest hover:bg-primary/5 transition-all">WhatsApp Us</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: About -->
+<section class="py-section-gap px-margin-desktop max-w-[1440px] mx-auto fade-in">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="absolute -top-4 -left-4 w-full h-full border border-rose-gold rounded-lg -z-10"></div>
+<img alt="Boutique Interior" class="rounded-lg shadow-2xl w-full h-[600px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwY5I6oOfvbsZaSjukN-3pz37ryDOBuwfOqd4hnDTJpbQ3s1VavKs-ztyqOdscjMNLDZjx--hPb7KrMH7-tlHeYRbIZ9lObQ3-zBpIc1W8nO4dBfNmRY4i-GdMaqp3a3AvrFSmUivoBF6vrbbfYu3n1We1Hts5F3LB3qgXLzLKm0aRPxV0EyYIUMQIgvA2ZeWTlmJXOLN16anr8Xu0JsXpWj_sG3rM2U8vkiWBGi7s25vPanS5T4lB3zez4qfHfK7kH4hOHo8RRKjQ">
+</div>
+<div class="space-y-8">
+<span class="text-rose-gold font-label-lg uppercase tracking-[0.2em]">Our Heritage</span>
+<h2 class="font-display-lg text-display-lg text-charcoal-black">Crafting Confidence Through Every Thread</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    At Indo West, we believe that fashion is more than just clothing—it's an expression of one's identity. Our boutique is a sanctuary of style where traditional elegance meets modern minimalism. 
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Each piece in our collection is handpicked to ensure the highest standards of quality, comfort, and sophistication. From the intricate textures of our ethnic wear to the clean lines of our contemporary chic essentials, we cater to the woman who values exclusivity and timeless appeal.
+                </p>
+<a class="inline-flex items-center text-primary font-bold border-b border-primary pb-1 group" href="#">
+                    Learn More About Us
+                    <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Section 3: Our Collections -->
+<section class="py-section-gap bg-soft-beige fade-in">
+<div class="px-margin-desktop max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 gap-4">
+    <div class="text-center md:text-left">
+        <h2 class="font-display-lg text-display-lg text-primary mb-4">Our Curated Collections</h2>
+        <div class="w-24 h-1 bg-rose-gold mx-auto md:mx-0"></div>
+    </div>
+    <a href="#" class="text-label-lg uppercase tracking-widest border-b border-primary pb-1 text-primary hover:opacity-80 transition-opacity">View All Products</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<div class="group relative overflow-hidden rounded-lg hover-lift">
+<img alt="Ethnic Elegance" class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkVTsZ7rXon3DPuMM1DdQ1pmFA4Z1vr5A8JXL2sbVmgTRUZtRT2VhRGJe__Fs61GZYcQypT25tIhjsw2CYcEQEadV0WOkur9fhUMAstan3qP6oDnen3h-Nv3ex4hQ2HKqwJQXw3_X1USqjjlnK-I2OyEzN5824hQLCPwGv4Q2OYrSNlLrWwR7plqwudpiKCNbbrfWstSsCUsieAdOe557VHDnpAT5KUEHq6mq0p37m5Lktb8nkIxCWHl65OVTHSWkJZ23c8yPNTA1I">
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<h3 class="font-display-lg text-headline-md text-white mb-2">Ethnic Elegance</h3>
+<button class="bg-white/20 backdrop-blur-md border border-white/40 text-white py-2 px-6 text-label-md uppercase tracking-widest hover:bg-white hover:text-primary transition-all">View Collection</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative overflow-hidden rounded-lg hover-lift">
+<img alt="Contemporary Chic" class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjKlNiNB_ylyTvqjRYc-RcejN8eQoV1_Pj8k7S1X5D3RLweHAR8RwAir0aNaJ-Vu_w_6SMQ0mdJUex6WynjMscTWMf3_tJjczZK6vk8fo4lUg0RJd21VJv_R5AVKlOd0SYOWKIzc7fSbLtnljDo1XCEHXS9Mpt5aVB2cVNkWhmtRKe7o0CElYxrsUbsWXN_tWS-_xCg-Uzs-1-O36FjHrzN29n0njNPrXsKro5m-gdeFWIfpMKMAad_WhBEZT9Q6xYTG-j3hOdlbY-">
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<h3 class="font-display-lg text-headline-md text-white mb-2">Contemporary Chic</h3>
+<button class="bg-white/20 backdrop-blur-md border border-white/40 text-white py-2 px-6 text-label-md uppercase tracking-widest hover:bg-white hover:text-primary transition-all">View Collection</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative overflow-hidden rounded-lg hover-lift">
+<img alt="Modern Essentials" class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFEzJlho1sDNxQJpwlZHGltyNAIqCGBqVIpOduqCOYTMP2tQmCLCh2nkFkS6JYRh4pzAovPeEF-PWDNoTrattajAQj3DzMckwmt5uvPH4MjY_F9tN-JPRrvDJXBjVIAKykaRHbpOsWBBCVVmWzZlwUuLcOTMLVmeKvPYI2bQUerM57v78UWogCIeLKh8C9Z8x3IA01AuIxtP4wcTyUFDlMA2X5r38or42_RrM4949CW4dBun7WOL03t4OBYR8lsY4hCCwa4Y44Zksu">
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<h3 class="font-display-lg text-headline-md text-white mb-2">Modern Essentials</h3>
+<button class="bg-white/20 backdrop-blur-md border border-white/40 text-white py-2 px-6 text-label-md uppercase tracking-widest hover:bg-white hover:text-primary transition-all">View Collection</button>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group relative overflow-hidden rounded-lg hover-lift">
+<img alt="Luxury Accessories" class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqHf3LrQVWO3J1eWjf46dlP4szH4rhx1OmBesgHQg4wM08FS63w2w0Jo8jzFybdLIAdO1_vamNPXey9fh2CAwPGgmMfpXHLPT3_DvQSzQQRfe7kLE7bZu9e_NDpRhlZH50rUb82wiAKKupnQH1Z4a-zJBwmFTvbrghwLuKNCQxMtIy8YuNvBbRzViHUi1x0l75pKbJhj7oN5W4BKSvm_MLfFHx4poio8gW-j7CXhOM2QqxUiuGtib2mGPvZGhNDChbD-UQDqGT0GE4">
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<h3 class="font-display-lg text-headline-md text-white mb-2">Luxury Accessories</h3>
+<button class="bg-white/20 backdrop-blur-md border border-white/40 text-white py-2 px-6 text-label-md uppercase tracking-widest hover:bg-white hover:text-primary transition-all">View Collection</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Featured Styles (Masonry-like Grid) -->
+<section class="py-section-gap px-margin-desktop max-w-[1440px] mx-auto fade-in">
+<div class="flex justify-between items-end mb-12">
+<div>
+<span class="text-rose-gold font-label-lg uppercase tracking-[0.2em]">The Gallery</span>
+<h2 class="font-display-lg text-display-lg text-charcoal-black mt-2">Featured Styles</h2>
+</div>
+<a class="text-label-lg uppercase tracking-widest border-b border-primary pb-1 text-primary" href="#">View Lookbook</a>
+</div>
+<div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+<div class="space-y-4 md:space-y-8">
+<img class="rounded-lg w-full h-80 object-cover hover:scale-[1.02] transition-transform cursor-pointer" data-alt="A high-fashion vertical portrait of a model in a stunning burgundy silk gown standing in a sun-drenched minimalist corridor. The lighting is ethereal and soft, highlighting the fabric's rich texture. The overall aesthetic is one of quiet luxury and editorial sophistication, perfectly reflecting the Indo West brand colors and minimalist boutique style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBjR9x9ncQRake0IdHV1vzF4QQZxNdWlHTlSDU77wjVCqid6k12h9sNQhnvqAs1nscI4G1k6QFP22D3m_cIYEUlAP0RwHm9IgOReGNdOfH2Ly6GFkRdgcD3PVXG-Cc_eTF7GeTbZ4RvONmlLaTL55dFpDcSETfhdNuL2yFvaknAsAhlra28aVGxGpRvxQjjbpDEeoHV9VkLwDhymSrsnvhh8Mrx4E75KjGLZhsQW7YD2Ttjbf3Axj-O08O-LRB_2IjNF6OfzzJL4XbK">
+<img class="rounded-lg w-full h-[450px] object-cover hover:scale-[1.02] transition-transform cursor-pointer" data-alt="Close-up detail of high-end accessories including rose gold jewelry and a leather clutch on a warm ivory velvet surface. The lighting is dramatic and focused, creating soft ambient shadows that emphasize the premium materials. The scene captures the essence of affordable luxury and modern elegance typical of a high-end fashion boutique gallery." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-pCG5Ph60HgBkzY7M9MzltD3O5qX6UzvmGF4sOZ9w7fCUpPb4FNIVIpt5-U_WqBWi_YmjStUOh_t7MEQeuJpBV9E9FmiIwDOfcNlncFM82FM5eRN4CJTAkNWrmwpD0IoXnqa5FYpPFBQVvvAKFF4f23krwHMBPJYtJ71X4BcuqanunyIKseikCsDPYdQVErMA8mqLGJW42LXWzeHNff3nScF0p3O4KstqCqiFN9qe10LzKcJvtyDiGCNJpOpcwvSbMuw4Pzs_DBgm">
+</div>
+<div class="space-y-4 md:space-y-8 pt-8 md:pt-16">
+<img class="rounded-lg w-full h-[450px] object-cover hover:scale-[1.02] transition-transform cursor-pointer" data-alt="An editorial shot of a woman in a contemporary beige pantsuit walking confidently through a high-end minimalist store. The background features clean architectural lines and warm ivory tones. The image evokes a sense of modern confidence and sophisticated urban style, using a palette of soft beige, charcoal, and warm ivory to align with the brand's identity." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCof_GQkpsKFxjgXj5ZnpSbIyIZROoOUf7SG4cCvqvd6FJL9nSu1cXhxSqeu4QzSQJkR5Vh7IAM7CeK3yXhhg8T0PwBwO9iM8CZmlCA9R-6cCMppUFMt1bunXIeqk8E5vXyiuIUV2NS33AefL6pLUfkequZd89tG-tWSjYBlP_DfGFTngrOFdK4bQcIL2WI1hHKFl4oOoHUg5fdEq1mQoDJhDZcq-QWLtrMUt-Ny5sK33ec50GHmgqhpdlBl-SmLzdtX2LI5xxjLtdU">
+<img class="rounded-lg w-full h-80 object-cover hover:scale-[1.02] transition-transform cursor-pointer" data-alt="A minimalist overhead shot of a flat-lay fashion arrangement featuring a burgundy scarf, rose gold watch, and neutral-toned garments. The composition is clean and magazine-like, set against a pristine warm ivory background. The mood is calm and organized, emphasizing the artisanal quality and curation of the Indo West collection." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBlWQzyPuL11HYfjEXYjh40MKbD847B2uaVP3qLHQwkujUpUs2gA-bJI33ONuQGJc1-Vnpyw0zcSt48Cuf_wjmFMeBJ4Dejxltcga3b07rhEHS4LxusgO7Fs75Lfic8C9McavRR2nKHAp5vzqCDqGXmwBiT0YmkiIVWvYWTnVqfSqFV-23U5YTQ1nIRO28vAPj7_7IYC_sJtPHqvTumUpM_uKfbZvg_oVO37ubAK2OvUXEFgS5N44OiU5plJ5-bPd_SZ0nKwsTflkjW">
+</div>
+<div class="space-y-4 md:space-y-8">
+<img class="rounded-lg w-full h-80 object-cover hover:scale-[1.02] transition-transform cursor-pointer" data-alt="Portrait of a woman wearing intricate ethnic fusion jewelry against a dark charcoal background. The lighting is high-contrast, casting a golden glow on the rose gold and burgundy elements of the jewelry. This dramatic piece highlights the craftsmanship and heritage aspect of the boutique's unique fashion offerings." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBb2_TvD1OG7GUPiXlNVSfx_LcFxfj55yY5Z6Yrth37rIo7-HNTBdZzlURizB4IONq7k9eGadvKa4Y75Gwj_WNNxzjs44io3PBJflK8YQzYy5S6VK8Fb9kYK3v1autkJRSNDdgSXbkYIUxnrlv-e1ueiuWlsK5xXw5iHPwc7w56BpH-ZiO8aUhLGFvzvQrbYbUlPil8G1ZdplNdoA2UHuxEjwuuNos4QzUJ2t_53_KnJSPAD7IADordOEayda228HdCwOpsgjpTou6n">
+<img class="rounded-lg w-full h-[450px] object-cover hover:scale-[1.02] transition-transform cursor-pointer" data-alt="A stylish woman in a flowing floral dress standing in a high-end boutique garden setting. The lighting is warm and golden-hour inspired, creating a dreamlike and aspirational atmosphere. The soft beige and rose gold color tones of the environment harmonize with the minimalist luxury aesthetic of the brand's fashion line." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD9Jci9K6cmLJKJFCRQxhp80uMDa6i95Y7C727qsC8vpcuJGPctr3_vZGSRbIanjng5QqkVEnDAtK0UWsl0WSQlm6EAW94qUJJyWLaHe0kwhpQ678GM3ShbGAUUSEqxXMHvzYGcfRZCUCm3Rjh843vWofiJg17qjIHZEQhlXR1RCcxZ-e_IRZiJVWQtmwz4F5mQunSD6DRQwIN_WMowPTM1_BOibld6wNjwlP_PTHrOrfDsqTTGU8i8JjYdgYR7wvBLPOwqOt2MZe_C">
+</div>
+<div class="space-y-4 md:space-y-8 pt-8 md:pt-16">
+<img class="rounded-lg w-full h-[450px] object-cover hover:scale-[1.02] transition-transform cursor-pointer" data-alt="Close-up photography of exquisite textile textures in shades of burgundy and ivory, arranged in a magazine editorial style. The focus is on the fine weave and premium quality of the fabric. The image communicates the brand's dedication to quality and luxury through detailed visual cues and sophisticated color pairings." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxVp6T3dOtXrOu6eBhIvJkdTMpndxODN1WTBfK60EfpAHT0mRu4pqerixJiuWA9Dkc8Y0nuScMzyDDaCzigzQD0Xhsn-IuqDaRAECW4381cxcbIrUmjHL4L0_B8jfIfoPmUEZHBCQBAUIm90YqSzEBo1w4pXEai38UWR8oEiBNiHlnc90b46yuc0JfBZyNKXSNXLVoeRGFvEioA4UUulUkM1Gr0Gz8p3lbrR4Gcrll-AelShV2UhPFQNcqbRktG7iQWKlOvYU-lIcs">
+<img class="rounded-lg w-full h-80 object-cover hover:scale-[1.02] transition-transform cursor-pointer" data-alt="A wide-angle shot of a minimalist luxury boutique interior with curated displays of clothing on sleek charcoal rails. The space is filled with natural light and features large external margins, focusing attention on the high-quality fashion. The warm ivory walls and soft lighting create an inviting and exclusive atmosphere for the sophisticated shopper." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByLaTc2rp_Qi0ido6BgHPXz45DgVF3sxT80GbwfinwFswl_3FWe2y3oUjdx1Kmc_R4BCJkTwzwmGcc2MHKg_32kvebijmCqhPLYlPdKBbYS3NtWXvh_VYnBGc5lI_vAoZWwJ7TFy0ta5Q-ahp26wLf6oyDAVMOr0lXWgAxCVv5iX6CJ4mflm_7-L2m3TPN_HenYCmbAGrHFky48ZeSfqldxXNkyrmxeUz3YGeTclogxnmujrntM9O9Q2XvP7eEhvo9B12XqfRlpVTM">
+</div>
+</div>
+</section>
+<!-- Section 5: Why Choose Us -->
+<section class="py-section-gap bg-charcoal-black text-white fade-in">
+<div class="px-margin-desktop max-w-[1440px] mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-display-lg text-display-lg mb-4">The Indo West Promise</h2>
+<p class="text-surface-variant max-w-xl mx-auto">Commitment to excellence in every detail of your shopping journey.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="glass-card p-10 rounded-lg text-center hover-lift border-white/10">
+<span class="material-symbols-outlined text-rose-gold text-5xl mb-6">verified</span>
+<h3 class="font-display-lg text-headline-md mb-4 text-white">Premium Quality</h3>
+<p class="text-surface-variant font-body-sm leading-relaxed">Each garment is crafted from the finest fabrics with meticulous attention to detail, ensuring longevity and luxury.</p>
+</div>
+<div class="glass-card p-10 rounded-lg text-center hover-lift border-white/10">
+<span class="material-symbols-outlined text-rose-gold text-5xl mb-6">auto_awesome</span>
+<h3 class="font-display-lg text-headline-md mb-4 text-white">Trendy Collections</h3>
+<p class="text-surface-variant font-body-sm leading-relaxed">Stay ahead of the curve with our weekly updated catalog of fusion wear and contemporary Western silhouettes.</p>
+</div>
+<div class="glass-card p-10 rounded-lg text-center hover-lift border-white/10">
+<span class="material-symbols-outlined text-rose-gold text-5xl mb-6">payments</span>
+<h3 class="font-display-lg text-headline-md mb-4 text-white">Affordable Luxury</h3>
+<p class="text-surface-variant font-body-sm leading-relaxed">We believe high-end fashion should be accessible. Experience boutique exclusivity without the exorbitant price tags.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Lookbook & Testimonials -->
+<section class="py-section-gap overflow-hidden fade-in">
+<div class="px-margin-desktop max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Lookbook Editorial -->
+<div class="lg:col-span-2 bg-warm-ivory p-12 border border-outline-variant/30 relative overflow-hidden flex flex-col justify-center">
+<div class="absolute top-0 right-0 p-8">
+<span class="text-label-lg font-bold text-primary tracking-widest">VOL. 24 EDITION</span>
+</div>
+<div class="max-w-md">
+<h2 class="font-display-lg text-display-lg text-charcoal-black mb-6">Winter Whispers:<br>The Editorial</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                            A visual journey through our latest winter collection, capturing the essence of cold-weather elegance and cozy silhouettes.
+                        </p>
+<button class="bg-primary text-white px-8 py-3 font-label-lg uppercase tracking-widest hover:bg-primary/90 transition-all">Explore Lookbook</button>
+</div>
+<div class="mt-12 flex space-x-4 overflow-x-auto pb-4 scrollbar-hide">
+<img class="w-48 h-64 object-cover rounded shadow-md flex-shrink-0" data-alt="Editorial fashion photography of a model wearing a heavy wool coat in deep burgundy, standing against a stark white architectural wall. The high-key lighting creates a clean and modern look, emphasizing the high-contrast pairing of the dark garment and the bright background. The mood is powerful and chic, perfectly capturing the Winter Whispers lookbook theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQMwz29CxQhOe8L1kqZrDluXPdGSRIm69WZIzRoX3933w_6h1yL4USyiu8VlPxM9yQ0gWOu8FG_BXXxSEZFuHiYZKDSdxseEVbjzxNmomaWqEAI7aHgrz89o58AW31tcDuJiZWj7tIqt7h5WSSDzpvdkCQpfngF6sHc70-GtqdHJYGBQK7dGg36Qqa6QZ2PHmHsULc6jH-zP8_46k-bPd96u7hqgnTkPng-90-DADtpbRZxincC4mhVsO8_zNB6l9p5OxWMhkZB28Y">
+<img class="w-48 h-64 object-cover rounded shadow-md flex-shrink-0" data-alt="Magazine-style close-up of a model's face with minimal makeup and elegant gold earrings, partially obscured by a soft beige knitted sweater. The focus is soft and dreamy, creating a sense of warmth and intimacy. This image adds a lifestyle element to the Indo West editorial, emphasizing comfort and effortless style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3rmFCQSG7x7i93N2LKrQ_4k10xkTZ-wYeFJ_z3CujMlAlcVIjCQ-fQy2Vd0rvKDy6ekMln0QLd8u9dz54Rca8Ep4D6u4974CUS9KjWwJcKfgFiCFkNXz2OwfPBY5OpxKdeYaJEMPWj8mBi8GPXIYiiHctuFqJ4tki8jPxXTUC7ZWzmm9F_LheEKHZUazUap1UXUTAZsdtE04Xft36uHaTut-DqU7ntFJb8Xhf0ebs3j6OcirhzjFmrlwUISvvmzD5_WLAnwIxdlqU">
+<img class="w-48 h-64 object-cover rounded shadow-md flex-shrink-0" data-alt="Fashion portrait of a woman sitting on a minimalist charcoal chair in a light-filled studio. She is wearing an ivory silk blouse and tailored trousers. The overall composition is balanced and elegant, using a neutral color palette to convey a sense of timeless sophistication and professional boutique photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-aTW37OlXbWEXy4XhXLV-ysOZNROgCBKuT874hL3LpE277rhpducPrP94bKTybjRfmnmeAzhkJDgQFsktfLxZC1eISBLfUwxMvIKO1rd8k_YU9I6vruY_d5UpmOgG3GYf5wqr2cdb3abNJkGcNsxv3eIPuzHlY21lYe58bromqi7HLqetBTJWKIsJzj8u0zlSQ5PiW_EScwTPVQYBh8m8xL-Rvdz2aoQzqCFV_EMKFBn-aVJRowZuQC4VknTAAmUqHa-THoFFgEks">
+</div>
+</div>
+<!-- Testimonials -->
+<div class="bg-primary p-12 text-white flex flex-col justify-center">
+<div class="mb-8">
+<div class="flex text-rose-gold mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-display-lg text-headline-md italic leading-tight mb-6">"The collection at Indo West is truly unique. I've never felt more confident and elegant than when wearing their contemporary fusion pieces."</p>
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center font-bold">SM</div>
+<div>
+<p class="font-bold">Sophia Miller</p>
+<p class="text-white/60 text-sm">Loyal Customer</p>
+</div>
+</div>
+</div>
+<div class="mt-auto flex justify-between items-center border-t border-white/20 pt-8">
+<span class="text-sm uppercase tracking-widest opacity-60">Verified Reviews</span>
+<div class="flex space-x-2">
+<button class="p-2 border border-white/20 hover:bg-white/10 transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="p-2 border border-white/20 hover:bg-white/10 transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: Contact & WhatsApp FAB -->
+<section class="py-section-gap px-margin-desktop max-w-[1440px] mx-auto border-t border-outline-variant/30 fade-in" id="contact">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<div>
+<h3 class="font-display-lg text-headline-md text-primary mb-6">Visit Our Store</h3>
+<p class="text-on-surface-variant mb-8">Experience our collections in person at our flagship boutique. Our stylists are here to help you find your perfect look.</p>
+<div class="space-y-4">
+<div class="flex items-start space-x-4">
+<span class="material-symbols-outlined text-rose-gold">location_on</span>
+<div>
+<p class="font-bold">Indo West Flagship</p>
+<p class="text-sm text-on-surface-variant">123 Fashion Blvd, Boutique District<br>New Delhi, 110001</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h3 class="font-display-lg text-headline-md text-primary mb-6">Get in Touch</h3>
+<div class="space-y-4">
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-rose-gold">call</span>
+<p class="text-on-surface-variant">+91 98765 43210</p>
+</div>
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-rose-gold">mail</span>
+<p class="text-on-surface-variant">hello@indowest.com</p>
+</div>
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-rose-gold">schedule</span>
+<div>
+<p class="text-sm text-on-surface-variant"><span class="font-bold">Mon - Sat:</span> 10:00 AM - 8:00 PM</p>
+<p class="text-sm text-on-surface-variant"><span class="font-bold">Sun:</span> 11:00 AM - 6:00 PM</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-soft-beige p-8 rounded-lg">
+<h3 class="font-display-lg text-headline-md text-primary mb-4">Quick Connect</h3>
+<p class="text-sm text-on-surface-variant mb-6">Need instant assistance with styling or availability? Our WhatsApp support is active during store hours.</p>
+<a class="flex items-center justify-center space-x-3 bg-[#25D366] text-white py-4 rounded font-bold hover:shadow-lg transition-all" href="#">
+<span class="material-symbols-outlined">chat</span>
+<span class="">Chat on WhatsApp</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface border-t border-outline-variant/30">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-desktop py-section-gap max-w-[1440px] mx-auto">
+<div class="space-y-6">
+<a class="font-display-lg text-headline-md text-primary dark:text-primary-fixed-dim" href="#">INDO WEST</a>
+<p class="text-on-surface-variant dark:text-surface-variant font-body-sm max-w-xs">
+                    Curating the finest blend of Indo-Western fashion for the modern woman who values craftsmanship and luxury.
+                </p>
+<div class="flex space-x-4">
+<a class="w-10 h-10 border border-outline rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">brand_awareness</span>
+</a>
+<a class="w-10 h-10 border border-outline rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<h4 class="font-bold text-label-lg uppercase tracking-widest mb-6 text-on-surface dark:text-inverse-on-surface">Shop</h4>
+<ul class="space-y-3">
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-body-sm" href="#">Collections</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-body-sm" href="#">Lookbook</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-body-sm" href="#">Store Locator</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-label-lg uppercase tracking-widest mb-6 text-on-surface dark:text-inverse-on-surface">Support</h4>
+<ul class="space-y-3">
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-body-sm" href="#">Shipping Info</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-body-sm" href="#">Privacy Policy</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-body-sm" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-label-lg uppercase tracking-widest mb-6 text-on-surface dark:text-inverse-on-surface">Join the Boutique</h4>
+<p class="text-on-surface-variant dark:text-surface-variant font-body-sm mb-4">Subscribe to receive first access to our new arrivals and exclusive boutique events.</p>
+<form class="flex border-b border-outline py-2">
+<input class="bg-transparent border-none focus:ring-0 flex-grow text-sm placeholder:text-on-surface-variant/50" placeholder="Email Address" type="email">
+<button class="material-symbols-outlined text-primary" type="submit">arrow_forward</button>
+</form>
+</div>
+</div>
+<div class="px-margin-desktop py-8 border-t border-outline/20 max-w-[1440px] mx-auto text-center md:text-left">
+<p class="text-on-surface-variant dark:text-surface-variant text-body-sm">
+                © 2024 INDO WEST Women's Fashion Store. All Rights Reserved.
+            </p>
+</div>
+</footer>
+<script>
+        // Micro-interactions and simple scroll reveal
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section').forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+
+

@@ -1,0 +1,6 @@
+{
+  "name": "Indo West Fashion Showcase",
+  "description": "A premium modern luxury static catalog showcase website for Indo West - Women's Fashion Store.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

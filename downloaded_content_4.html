@@ -1,0 +1,447 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>INDO WEST | Timeless Fashion, Modern Elegance</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Inter:wght@400;500;600&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary-fixed": "#ffd9dd",
+                        "charcoal-black": "#2D2D2D",
+                        "outline-variant": "#e2bebb",
+                        "on-secondary-container": "#6f0613",
+                        "soft-beige": "#F5F1EE",
+                        "on-tertiary-container": "#ffb8c1",
+                        "secondary-fixed": "#ffdad8",
+                        "error": "#ba1a1a",
+                        "background": "#fcf9f7",
+                        "on-secondary-fixed-variant": "#891c22",
+                        "tertiary": "#662c36",
+                        "outline": "#8e706d",
+                        "tertiary-container": "#82424d",
+                        "surface-bright": "#fcf9f7",
+                        "secondary": "#a93537",
+                        "on-secondary-fixed": "#410006",
+                        "surface-dim": "#dcd9d8",
+                        "surface-variant": "#e5e2e0",
+                        "on-background": "#1b1c1b",
+                        "warm-ivory": "#FAF7F5",
+                        "inverse-primary": "#ffb3ad",
+                        "surface-tint": "#b3282a",
+                        "on-primary-fixed": "#410004",
+                        "on-secondary": "#ffffff",
+                        "on-primary-fixed-variant": "#900a15",
+                        "surface": "#fcf9f7",
+                        "surface-container-lowest": "#ffffff",
+                        "surface-container-highest": "#e5e2e0",
+                        "secondary-fixed-dim": "#ffb3b0",
+                        "primary-container": "#a61e22",
+                        "on-surface": "#1b1c1b",
+                        "primary-fixed-dim": "#ffb3ad",
+                        "on-primary-container": "#ffb9b4",
+                        "surface-container": "#f0edeb",
+                        "surface-container-high": "#eae8e6",
+                        "primary": "#83000f",
+                        "surface-container-low": "#f6f3f1",
+                        "on-surface-variant": "#5a413e",
+                        "inverse-on-surface": "#f3f0ee",
+                        "on-tertiary-fixed-variant": "#70343e",
+                        "primary-fixed": "#ffdad7",
+                        "on-primary": "#ffffff",
+                        "rose-gold": "#B76E79",
+                        "error-container": "#ffdad6",
+                        "secondary-container": "#fc7271",
+                        "on-error": "#ffffff",
+                        "inverse-surface": "#30302f",
+                        "tertiary-fixed-dim": "#ffb2bc",
+                        "on-error-container": "#93000a",
+                        "on-tertiary-fixed": "#3a0915",
+                        "on-tertiary": "#ffffff"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "unit": "4px",
+                        "gutter": "24px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px",
+                        "section-gap": "80px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Playfair Display"],
+                        "body-lg": ["Inter"],
+                        "headline-lg": ["Playfair Display"],
+                        "body-sm": ["Inter"],
+                        "headline-lg-mobile": ["Playfair Display"],
+                        "headline-md": ["Playfair Display"],
+                        "label-md": ["Inter"],
+                        "body-md": ["Inter"],
+                        "label-lg": ["Inter"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                        "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "600"}],
+                        "body-sm": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                        "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "600"}],
+                        "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                        "label-md": ["12px", {"lineHeight": "14px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                        "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                        "label-lg": ["14px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}]
+                    }
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+        }
+        .parallax-container {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .glass-card {
+            background: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .hover-lift {
+            transition: transform 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+        }
+        .hover-lift:hover {
+            transform: translateY(-8px);
+        }
+        .fade-in {
+            animation: fadeIn 1.2s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-warm-ivory text-charcoal-black font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<header class="bg-background/80 dark:bg-background/80 backdrop-blur-md border-b border-outline-variant/30 dark:border-outline/20 docked full-width top-0 sticky z-50">
+<nav class="flex justify-between items-center w-full px-margin-desktop max-w-[1440px] mx-auto py-6">
+<div class="flex items-center space-x-gutter">
+<a class="inline-block" href="#"><img alt="INDO WEST Logo" class="h-20 md:h-28 w-auto object-contain transition-all duration-300" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCD2LvbScijyUCvPnZ-L5jv-CG_6SLbDjoYgKCb38dmi7bM3bEPk84OIILPj-d27zW5v4pl46eKimpEPnBqEWk5seuCvMmtCg0prKICTChukTiHhRtnSdAXXROMjvoTrn8BlRZFwsdS72d9pWdA3oajPa8YOoQXvcfhOj2shdKLC1SOBUMKeOW6W4nGCi5v2YqQ3mSWmCGll-6RVYAtEMvBRaCrmWcFz2d-yrWSrdFyqA7i2gix6H-TpbK6ZXzTYQsyB4UvwcyHL5gf"></a>
+</div>
+<div class="hidden md:flex items-center space-x-10 font-body-md text-label-lg uppercase tracking-widest">
+<a class="text-primary dark:text-primary-fixed-dim font-bold border-b-2 border-primary pb-1" href="#">Collections</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors duration-300" href="#">Lookbook</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors duration-300" href="#">About</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors duration-300" href="#">Gallery</a>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors duration-300" href="#">Contact</a>
+</div>
+<div class="flex items-center space-x-6">
+<button class="material-symbols-outlined text-primary hover:opacity-80 transition-all duration-300">favorite</button>
+<button class="material-symbols-outlined text-primary hover:opacity-80 transition-all duration-300">shopping_bag</button>
+<button class="bg-primary text-on-primary px-6 py-2 text-label-lg uppercase tracking-widest hover:opacity-90 active:scale-95 transition-all">WhatsApp Us</button>
+</div>
+</nav>
+</header>
+<!-- Section 1: Hero -->
+<section class="relative h-[90vh] flex items-center overflow-hidden fade-in">
+<div class="absolute inset-0 z-0">
+<div class="w-full h-full parallax-container bg-cover bg-center" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuB2O5UmxiZvTps3D2VovezQdsetB3U_r8FiUGTl7TgSgxAQC9GZUnYDg3p9NRLrhyLbKjuseCbmpkfuKQQKNKXQz51yvjo25SQ7_GOJGDoag4_2hGV6KEDnz6nSAQUrpbWsUqjC4CJ2NAVS7g73_X4UcyNN1uSIZ_DsUKg0KBvaYLsDtMPqw6X9PXF0QnsMFmLHVjfOu5fOB10P6I0eH32eq3HnPOV8nVVFvSd83HvEng4NBHbUi84RBSvGUg3FFQkiNPiq3a6WtcaE');"></div>
+<div class="absolute inset-0 bg-gradient-to-r from-warm-ivory/60 via-transparent to-transparent"></div>
+</div>
+<div class="relative z-10 px-margin-desktop max-w-[1440px] mx-auto w-full fade-in">
+<div class="max-w-2xl">
+<h1 class="font-display-lg text-display-lg text-primary mb-6 leading-tight">Timeless Fashion,<br>Modern Elegance</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-lg">
+                    Discover beautifully curated collections designed for every occasion. Experience the fusion of traditional craftsmanship and contemporary silhouettes.
+                </p>
+<div class="flex flex-wrap gap-4">
+<a class="bg-primary text-on-primary px-10 py-4 font-label-lg uppercase tracking-widest hover:shadow-xl transition-all inline-block text-center" href="{{DATA:SCREEN:SCREEN_11}}">Explore Collection</a>
+<button class="border border-primary text-primary px-10 py-4 font-label-lg uppercase tracking-widest hover:bg-primary/5 transition-all">WhatsApp Us</button>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: About -->
+<section class="py-section-gap px-margin-desktop max-w-[1440px] mx-auto fade-in">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-20 items-center">
+<div class="relative">
+<div class="absolute -top-4 -left-4 w-full h-full border border-rose-gold rounded-lg -z-10"></div>
+<img alt="Boutique Interior" class="rounded-lg shadow-2xl w-full h-[600px] object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCwY5I6oOfvbsZaSjukN-3pz37ryDOBuwfOqd4hnDTJpbQ3s1VavKs-ztyqOdscjMNLDZjx--hPb7KrMH7-tlHeYRbIZ9lObQ3-zBpIc1W8nO4dBfNmRY4i-GdMaqp3a3AvrFSmUivoBF6vrbbfYu3n1We1Hts5F3LB3qgXLzLKm0aRPxV0EyYIUMQIgvA2ZeWTlmJXOLN16anr8Xu0JsXpWj_sG3rM2U8vkiWBGi7s25vPanS5T4lB3zez4qfHfK7kH4hOHo8RRKjQ">
+</div>
+<div class="space-y-8">
+<span class="text-rose-gold font-label-lg uppercase tracking-[0.2em]">Our Heritage</span>
+<h2 class="font-display-lg text-display-lg text-charcoal-black">Crafting Confidence Through Every Thread</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                    At Indo West, we believe that fashion is more than just clothing—it's an expression of one's identity. Our boutique is a sanctuary of style where traditional elegance meets modern minimalism. 
+                </p>
+<p class="font-body-md text-body-md text-on-surface-variant">
+                    Each piece in our collection is handpicked to ensure the highest standards of quality, comfort, and sophistication. From the intricate textures of our ethnic wear to the clean lines of our contemporary chic essentials, we cater to the woman who values exclusivity and timeless appeal.
+                </p>
+<a class="inline-flex items-center text-primary font-bold border-b border-primary pb-1 group" href="#">
+                    Learn More About Us
+                    <span class="material-symbols-outlined ml-2 group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Section 3: Our Collections -->
+<section class="py-section-gap bg-soft-beige fade-in">
+<div class="px-margin-desktop max-w-[1440px] mx-auto">
+<div class="flex flex-col md:flex-row justify-between items-center md:items-end mb-16 gap-4">
+<div class="text-center md:text-left">
+<h2 class="font-display-lg text-display-lg text-primary mb-4">Our Curated Collections</h2>
+<div class="w-24 h-1 bg-rose-gold mx-auto md:mx-0"></div>
+</div>
+<a class="text-label-lg uppercase tracking-widest border-b border-primary pb-1 text-primary hover:opacity-80 transition-opacity" href="#">View All Products</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-gutter">
+<!-- Card 1 -->
+<div class="group relative overflow-hidden rounded-lg hover-lift">
+<img alt="Ethnic Elegance" class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkVTsZ7rXon3DPuMM1DdQ1pmFA4Z1vr5A8JXL2sbVmgTRUZtRT2VhRGJe__Fs61GZYcQypT25tIhjsw2CYcEQEadV0WOkur9fhUMAstan3qP6oDnen3h-Nv3ex4hQ2HKqwJQXw3_X1USqjjlnK-I2OyEzN5824hQLCPwGv4Q2OYrSNlLrWwR7plqwudpiKCNbbrfWstSsCUsieAdOe557VHDnpAT5KUEHq6mq0p37m5Lktb8nkIxCWHl65OVTHSWkJZ23c8yPNTA1I">
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<h3 class="font-display-lg text-headline-md text-white mb-2">Ethnic Elegance</h3>
+<button class="bg-white/20 backdrop-blur-md border border-white/40 text-white py-2 px-6 text-label-md uppercase tracking-widest hover:bg-white hover:text-primary transition-all">View Collection</button>
+</div>
+</div>
+<!-- Card 2 -->
+<div class="group relative overflow-hidden rounded-lg hover-lift">
+<img alt="Contemporary Chic" class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjKlNiNB_ylyTvqjRYc-RcejN8eQoV1_Pj8k7S1X5D3RLweHAR8RwAir0aNaJ-Vu_w_6SMQ0mdJUex6WynjMscTWMf3_tJjczZK6vk8fo4lUg0RJd21VJv_R5AVKlOd0SYOWKIzc7fSbLtnljDo1XCEHXS9Mpt5aVB2cVNkWhmtRKe7o0CElYxrsUbsWXN_tWS-_xCg-Uzs-1-O36FjHrzN29n0njNPrXsKro5m-gdeFWIfpMKMAad_WhBEZT9Q6xYTG-j3hOdlbY-">
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<h3 class="font-display-lg text-headline-md text-white mb-2">Contemporary Chic</h3>
+<button class="bg-white/20 backdrop-blur-md border border-white/40 text-white py-2 px-6 text-label-md uppercase tracking-widest hover:bg-white hover:text-primary transition-all">View Collection</button>
+</div>
+</div>
+<!-- Card 3 -->
+<div class="group relative overflow-hidden rounded-lg hover-lift">
+<img alt="Modern Essentials" class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDFEzJlho1sDNxQJpwlZHGltyNAIqCGBqVIpOduqCOYTMP2tQmCLCh2nkFkS6JYRh4pzAovPeEF-PWDNoTrattajAQj3DzMckwmt5uvPH4MjY_F9tN-JPRrvDJXBjVIAKykaRHbpOsWBBCVVmWzZlwUuLcOTMLVmeKvPYI2bQUerM57v78UWogCIeLKh8C9Z8x3IA01AuIxtP4wcTyUFDlMA2X5r38or42_RrM4949CW4dBun7WOL03t4OBYR8lsY4hCCwa4Y44Zksu">
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<h3 class="font-display-lg text-headline-md text-white mb-2">Modern Essentials</h3>
+<button class="bg-white/20 backdrop-blur-md border border-white/40 text-white py-2 px-6 text-label-md uppercase tracking-widest hover:bg-white hover:text-primary transition-all">View Collection</button>
+</div>
+</div>
+<!-- Card 4 -->
+<div class="group relative overflow-hidden rounded-lg hover-lift">
+<img alt="Luxury Accessories" class="w-full h-[500px] object-cover transition-transform duration-700 group-hover:scale-110" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCqHf3LrQVWO3J1eWjf46dlP4szH4rhx1OmBesgHQg4wM08FS63w2w0Jo8jzFybdLIAdO1_vamNPXey9fh2CAwPGgmMfpXHLPT3_DvQSzQQRfe7kLE7bZu9e_NDpRhlZH50rUb82wiAKKupnQH1Z4a-zJBwmFTvbrghwLuKNCQxMtIy8YuNvBbRzViHUi1x0l75pKbJhj7oN5W4BKSvm_MLfFHx4poio8gW-j7CXhOM2QqxUiuGtib2mGPvZGhNDChbD-UQDqGT0GE4">
+<div class="absolute inset-0 bg-gradient-to-t from-charcoal-black/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex flex-col justify-end p-8">
+<h3 class="font-display-lg text-headline-md text-white mb-2">Luxury Accessories</h3>
+<button class="bg-white/20 backdrop-blur-md border border-white/40 text-white py-2 px-6 text-label-md uppercase tracking-widest hover:bg-white hover:text-primary transition-all">View Collection</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 4: Featured Styles (Masonry-like Grid) -->
+
+<!-- Section 5: Why Choose Us -->
+<section class="py-section-gap bg-charcoal-black text-white fade-in">
+<div class="px-margin-desktop max-w-[1440px] mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-display-lg text-display-lg mb-4">The Indo West Promise</h2>
+<p class="text-surface-variant max-w-xl mx-auto">Commitment to excellence in every detail of your shopping journey.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<div class="glass-card p-10 rounded-lg text-center hover-lift border-white/10">
+<span class="material-symbols-outlined text-rose-gold text-5xl mb-6">verified</span>
+<h3 class="font-display-lg text-headline-md mb-4 text-white">Premium Quality</h3>
+<p class="text-surface-variant font-body-sm leading-relaxed">Each garment is crafted from the finest fabrics with meticulous attention to detail, ensuring longevity and luxury.</p>
+</div>
+<div class="glass-card p-10 rounded-lg text-center hover-lift border-white/10">
+<span class="material-symbols-outlined text-rose-gold text-5xl mb-6">auto_awesome</span>
+<h3 class="font-display-lg text-headline-md mb-4 text-white">Trendy Collections</h3>
+<p class="text-surface-variant font-body-sm leading-relaxed">Stay ahead of the curve with our weekly updated catalog of fusion wear and contemporary Western silhouettes.</p>
+</div>
+<div class="glass-card p-10 rounded-lg text-center hover-lift border-white/10">
+<span class="material-symbols-outlined text-rose-gold text-5xl mb-6">payments</span>
+<h3 class="font-display-lg text-headline-md mb-4 text-white">Affordable Luxury</h3>
+<p class="text-surface-variant font-body-sm leading-relaxed">We believe high-end fashion should be accessible. Experience boutique exclusivity without the exorbitant price tags.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 6: Lookbook & Testimonials -->
+<section class="py-section-gap overflow-hidden fade-in">
+<div class="px-margin-desktop max-w-[1440px] mx-auto">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-gutter">
+<!-- Lookbook Editorial -->
+<div class="lg:col-span-2 bg-warm-ivory p-12 border border-outline-variant/30 relative overflow-hidden flex flex-col justify-center">
+<div class="absolute top-0 right-0 p-8">
+<span class="text-label-lg font-bold text-primary tracking-widest">VOL. 24 EDITION</span>
+</div>
+<div class="max-w-md">
+<h2 class="font-display-lg text-display-lg text-charcoal-black mb-6">Winter Whispers:<br>The Editorial</h2>
+<p class="text-on-surface-variant mb-8 leading-relaxed">
+                            A visual journey through our latest winter collection, capturing the essence of cold-weather elegance and cozy silhouettes.
+                        </p>
+<button class="bg-primary text-white px-8 py-3 font-label-lg uppercase tracking-widest hover:bg-primary/90 transition-all">Explore Lookbook</button>
+</div>
+<div class="mt-12 flex space-x-4 overflow-x-auto pb-4 scrollbar-hide">
+<img class="w-48 h-64 object-cover rounded shadow-md flex-shrink-0" data-alt="Editorial fashion photography of a model wearing a heavy wool coat in deep burgundy, standing against a stark white architectural wall. The high-key lighting creates a clean and modern look, emphasizing the high-contrast pairing of the dark garment and the bright background. The mood is powerful and chic, perfectly capturing the Winter Whispers lookbook theme." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAQMwz29CxQhOe8L1kqZrDluXPdGSRIm69WZIzRoX3933w_6h1yL4USyiu8VlPxM9yQ0gWOu8FG_BXXxSEZFuHiYZKDSdxseEVbjzxNmomaWqEAI7aHgrz89o58AW31tcDuJiZWj7tIqt7h5WSSDzpvdkCQpfngF6sHc70-GtqdHJYGBQK7dGg36Qqa6QZ2PHmHsULc6jH-zP8_46k-bPd96u7hqgnTkPng-90-DADtpbRZxincC4mhVsO8_zNB6l9p5OxWMhkZB28Y">
+<img class="w-48 h-64 object-cover rounded shadow-md flex-shrink-0" data-alt="Magazine-style close-up of a model's face with minimal makeup and elegant gold earrings, partially obscured by a soft beige knitted sweater. The focus is soft and dreamy, creating a sense of warmth and intimacy. This image adds a lifestyle element to the Indo West editorial, emphasizing comfort and effortless style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3rmFCQSG7x7i93N2LKrQ_4k10xkTZ-wYeFJ_z3CujMlAlcVIjCQ-fQy2Vd0rvKDy6ekMln0QLd8u9dz54Rca8Ep4D6u4974CUS9KjWwJcKfgFiCFkNXz2OwfPBY5OpxKdeYaJEMPWj8mBi8GPXIYiiHctuFqJ4tki8jPxXTUC7ZWzmm9F_LheEKHZUazUap1UXUTAZsdtE04Xft36uHaTut-DqU7ntFJb8Xhf0ebs3j6OcirhzjFmrlwUISvvmzD5_WLAnwIxdlqU">
+<img class="w-48 h-64 object-cover rounded shadow-md flex-shrink-0" data-alt="Fashion portrait of a woman sitting on a minimalist charcoal chair in a light-filled studio. She is wearing an ivory silk blouse and tailored trousers. The overall composition is balanced and elegant, using a neutral color palette to convey a sense of timeless sophistication and professional boutique photography." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-aTW37OlXbWEXy4XhXLV-ysOZNROgCBKuT874hL3LpE277rhpducPrP94bKTybjRfmnmeAzhkJDgQFsktfLxZC1eISBLfUwxMvIKO1rd8k_YU9I6vruY_d5UpmOgG3GYf5wqr2cdb3abNJkGcNsxv3eIPuzHlY21lYe58bromqi7HLqetBTJWKIsJzj8u0zlSQ5PiW_EScwTPVQYBh8m8xL-Rvdz2aoQzqCFV_EMKFBn-aVJRowZuQC4VknTAAmUqHa-THoFFgEks">
+</div>
+</div>
+<!-- Testimonials -->
+<div class="bg-primary p-12 text-white flex flex-col justify-center">
+<div class="mb-8">
+<div class="flex text-rose-gold mb-4">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-display-lg text-headline-md italic leading-tight mb-6">"The collection at Indo West is truly unique. I've never felt more confident and elegant than when wearing their contemporary fusion pieces."</p>
+<div class="flex items-center space-x-4">
+<div class="w-12 h-12 rounded-full bg-white/20 flex items-center justify-center font-bold">SM</div>
+<div>
+<p class="font-bold">Sophia Miller</p>
+<p class="text-white/60 text-sm">Loyal Customer</p>
+</div>
+</div>
+</div>
+<div class="mt-auto flex justify-between items-center border-t border-white/20 pt-8">
+<span class="text-sm uppercase tracking-widest opacity-60">Verified Reviews</span>
+<div class="flex space-x-2">
+<button class="p-2 border border-white/20 hover:bg-white/10 transition-all">
+<span class="material-symbols-outlined">chevron_left</span>
+</button>
+<button class="p-2 border border-white/20 hover:bg-white/10 transition-all">
+<span class="material-symbols-outlined">chevron_right</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 7: Contact & WhatsApp FAB -->
+<section class="py-section-gap px-margin-desktop max-w-[1440px] mx-auto border-t border-outline-variant/30 fade-in" id="contact">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-gutter">
+<div>
+<h3 class="font-display-lg text-headline-md text-primary mb-6">Visit Our Store</h3>
+<p class="text-on-surface-variant mb-8">Experience our collections in person at our flagship boutique. Our stylists are here to help you find your perfect look.</p>
+<div class="space-y-4">
+<div class="flex items-start space-x-4">
+<span class="material-symbols-outlined text-rose-gold">location_on</span>
+<div>
+<p class="font-bold">Indo West Flagship</p>
+<p class="text-sm text-on-surface-variant">123 Fashion Blvd, Boutique District<br>New Delhi, 110001</p>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h3 class="font-display-lg text-headline-md text-primary mb-6">Get in Touch</h3>
+<div class="space-y-4">
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-rose-gold">call</span>
+<p class="text-on-surface-variant">+91 98765 43210</p>
+</div>
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-rose-gold">mail</span>
+<p class="text-on-surface-variant">hello@indowest.com</p>
+</div>
+<div class="flex items-center space-x-4">
+<span class="material-symbols-outlined text-rose-gold">schedule</span>
+<div>
+<p class="text-sm text-on-surface-variant"><span class="font-bold">Mon - Sat:</span> 10:00 AM - 8:00 PM</p>
+<p class="text-sm text-on-surface-variant"><span class="font-bold">Sun:</span> 11:00 AM - 6:00 PM</p>
+</div>
+</div>
+</div>
+</div>
+<div class="bg-soft-beige p-8 rounded-lg">
+<h3 class="font-display-lg text-headline-md text-primary mb-4">Quick Connect</h3>
+<p class="text-sm text-on-surface-variant mb-6">Need instant assistance with styling or availability? Our WhatsApp support is active during store hours.</p>
+<a class="flex items-center justify-center space-x-3 bg-[#25D366] text-white py-4 rounded font-bold hover:shadow-lg transition-all" href="#">
+<span class="material-symbols-outlined">chat</span>
+<span class="">Chat on WhatsApp</span>
+</a>
+</div>
+</div>
+</section>
+<!-- Footer -->
+<footer class="bg-surface-container-highest dark:bg-inverse-surface border-t border-outline-variant/30">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter px-margin-desktop py-section-gap max-w-[1440px] mx-auto">
+<div class="space-y-6">
+<a class="font-display-lg text-headline-md text-primary dark:text-primary-fixed-dim" href="#">INDO WEST</a>
+<p class="text-on-surface-variant dark:text-surface-variant font-body-sm max-w-xs">
+                    Curating the finest blend of Indo-Western fashion for the modern woman who values craftsmanship and luxury.
+                </p>
+<div class="flex space-x-4">
+<a class="w-10 h-10 border border-outline rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#"><span class="material-symbols-outlined text-lg">call</span></a>
+<a class="w-10 h-10 border border-outline rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#">
+<span class="material-symbols-outlined text-lg">public</span>
+</a>
+<a class="w-10 h-10 border border-outline rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="16" rx="5" ry="5" width="16" x="4" y="4"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a><a class="w-10 h-10 border border-outline rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-all" href="#"><svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><rect height="16" rx="5" ry="5" width="16" x="4" y="4"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line></svg></a></div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div>
+<h4 class="font-bold text-label-lg uppercase tracking-widest mb-6 text-on-surface dark:text-inverse-on-surface">Shop</h4>
+<ul class="space-y-3">
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-body-sm" href="#">Collections</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-body-sm" href="#">Lookbook</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-body-sm" href="#">Store Locator</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-bold text-label-lg uppercase tracking-widest mb-6 text-on-surface dark:text-inverse-on-surface">Support</h4>
+<ul class="space-y-3">
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-body-sm" href="#">Shipping Info</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-body-sm" href="#">Privacy Policy</a></li>
+<li class=""><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary transition-colors font-body-sm" href="#">Terms of Service</a></li>
+</ul>
+</div>
+</div>
+<div>
+<h4 class="font-bold text-label-lg uppercase tracking-widest mb-6 text-on-surface dark:text-inverse-on-surface">Join the Boutique</h4>
+<p class="text-on-surface-variant dark:text-surface-variant font-body-sm mb-4">Subscribe to receive first access to our new arrivals and exclusive boutique events.</p>
+<form class="flex border-b border-outline py-2">
+<input class="bg-transparent border-none focus:ring-0 flex-grow text-sm placeholder:text-on-surface-variant/50" placeholder="Email Address" type="email">
+<button class="material-symbols-outlined text-primary" type="submit">arrow_forward</button>
+</form>
+</div>
+</div>
+<div class="px-margin-desktop py-8 border-t border-outline/20 max-w-[1440px] mx-auto text-center md:text-left">
+<p class="text-on-surface-variant dark:text-surface-variant text-body-sm">
+                © 2024 INDO WEST Women's Fashion Store. All Rights Reserved.
+            </p>
+</div>
+</footer>
+<script>
+        // Micro-interactions and simple scroll reveal
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                threshold: 0.1
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('fade-in');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section').forEach(section => {
+                observer.observe(section);
+            });
+        });
+    </script>
+
+
+</body></html>

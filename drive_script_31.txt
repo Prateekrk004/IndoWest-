@@ -1,0 +1,11 @@
+
+      var _DRIVE_global = _DRIVE_global || {};
+      _DRIVE_global.loadedImages = [];
+      _DRIVE_global.failedImages = [];
+      _DRIVE_global.thumbnailAndIconOnLoadHandler = function(imgElement) {
+        _DRIVE_global.loadedImages.push(imgElement);
+      };
+      _DRIVE_global.thumbnailAndIconOnErrorHandler = function(imgElement) {
+        _DRIVE_global.failedImages.push(imgElement);
+      };
+    
