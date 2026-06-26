@@ -22,7 +22,7 @@ export default function ProductDetailModal({ product, onClose, isWishlisted, onT
   const handleWhatsAppAction = () => {
     const sizeSuffix = selectedSize ? ` (Size: ${selectedSize})` : '';
     const text = `Hello, I am interested in the following product:\n\nProduct Name: ${product.name}${sizeSuffix}\n\nCould you please provide more details regarding availability, size options, pricing, and delivery?`;
-    const waUrl = `https://wa.me/917411279019?text=${encodeURIComponent(text)}`;
+    const waUrl = `https://wa.me/919173495718?text=${encodeURIComponent(text)}`;
     window.open(waUrl, '_blank');
   };
 

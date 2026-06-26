@@ -6,12 +6,40 @@
 import React, { useState } from 'react';
 import { MapPin, Phone, Mail, Clock, MessageSquare, ArrowRight } from 'lucide-react';
 
+const LOCATIONS = [
+  {
+    id: 1,
+    name: "Kamaraj Road - Main Flagship",
+    label: "Flagship Boutique",
+    address: "Ground Floor, Mahavir Mall, Shop no 1,2,3,4, k, Kamaraj Rd, below Mysore Saree Udyog 316, opp. to Commercial Street, Bengaluru, Karnataka 560042",
+    mapsUrl: "https://maps.app.goo.gl/GUG5PvcCyY86ivMo9?g_st=ic",
+    embedUrl: "https://maps.google.com/maps?q=INDO-WEST%20(Below%20Mysore%20Saree%20Udhyog)%20Kamaraj%20Rd%20Bengaluru&t=&z=16&ie=UTF8&iwloc=&output=embed"
+  },
+  {
+    id: 2,
+    name: "Kamaraj Road - Store 2",
+    label: "Boutique Annex",
+    address: "Indo-West (Kamraj Road ), No.301, K, Kamaraj Rd, opp. to Koski Showroom, Bengaluru, Karnataka 560042",
+    mapsUrl: "https://maps.app.goo.gl/JbAvgrREte4yfoWY6?g_st=ic",
+    embedUrl: "https://maps.google.com/maps?q=Indo-West%20(Kamraj%20Road%20),%20No.301,%20K,%20Kamaraj%20Rd,%20opp.%20to%20koski%20Showroom,%20Bengaluru,%20Karnataka%20560042&t=&z=16&ie=UTF8&iwloc=&output=embed"
+  },
+  {
+    id: 3,
+    name: "Jayanagar Store",
+    label: "Heritage Showroom",
+    address: "M.Palike no, Indo West Jayanagar, No.47, B.B, 16/3, 10th Main Rd, 4th Block, Jayanagar, Bengaluru, Karnataka 560011",
+    mapsUrl: "https://maps.app.goo.gl/eekiaSaTUzLb7Szk9?g_st=ic",
+    embedUrl: "https://maps.google.com/maps?q=M.Palike%20no,%20Indo%20West%20Jayanagar,%20No.47,%20B.B,%2016/3,%2010th%20Main%20Rd,%204th%20Block,%20Jayanagar,%20Bengaluru,%20Karnataka%20560011&t=&z=16&ie=UTF8&iwloc=&output=embed"
+  }
+];
+
 export default function ContactSection() {
   const [name, setName] = useState('');
   const [subject, setSubject] = useState('General Boutique Inquiry');
   const [message, setMessage] = useState('');
+  const [activeLocationIndex, setActiveLocationIndex] = useState(0);
 
-  const boutiquePhone = '917411279019'; // Custom business contact phone
+  const boutiquePhone = '919173495718'; // Custom business contact phone
 
   const handleWhatsAppSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -47,25 +75,29 @@ export default function ContactSection() {
               {/* Information Cards list */}
               <div className="flex flex-col gap-6">
                 
-                <div className="flex items-start gap-4">
-                  <div className="p-3 bg-primary/5 text-primary">
-                    <MapPin size={18} />
-                  </div>
-                  <div>
-                    <h4 className="font-sans text-xs font-semibold uppercase tracking-wider mb-1">Store Address</h4>
-                    <p className="font-sans text-xs text-charcoal-black/70 leading-relaxed font-light mb-1.5">
-                      Ground Floor, Mahavir Mall, Shop no 1,2,3,4, k,<br />
-                      Kamaraj Rd, below Mysore saree udyog 316, opp. to Commercial Street,<br />
-                      Bengaluru, Karnataka 560042
-                    </p>
-                    <a 
-                      href="http://google.com/maps/place/INDO-WEST+(Below+Mysore+Saree+Udhyog)/@12.9814812,77.6103771,17z/data=!3m1!5s0x3bae1689aa29045d:0x512e835814138336!4m8!3m7!1s0x3bae17a544fb8ea9:0xc4995bdc825b3d43!8m2!3d12.9814812!4d77.6103771!9m1!1b1!16s%2Fg%2F11j1bg51t_!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDYxMy4wIKXMDSoASAFQAw%3D%3D" 
-                      target="_blank"  
-                      rel="noopener noreferrer" 
-                      className="text-[10px] text-primary hover:text-secondary uppercase tracking-widest font-bold font-sans transition-colors"
-                    >
-                      View on Interactive Google Maps ↗
-                    </a>
+                <div className="border-b border-rose-gold/15 pb-4">
+                  <h4 className="font-sans text-xs font-semibold uppercase tracking-wider text-primary mb-4 flex items-center gap-2">
+                    <MapPin size={14} /> Our Store Locations
+                  </h4>
+                  <div className="flex flex-col gap-5">
+                    {LOCATIONS.map((loc) => (
+                      <div key={loc.id} className="pl-6 border-l-2 border-rose-gold/20 hover:border-primary transition-colors py-1">
+                        <h5 className="font-editorial text-sm font-semibold tracking-wide text-primary mb-1">
+                          {loc.name}
+                        </h5>
+                        <p className="font-sans text-[11px] text-charcoal-black/75 leading-relaxed font-light mb-1.5">
+                          {loc.address}
+                        </p>
+                        <a 
+                          href={loc.mapsUrl} 
+                          target="_blank"  
+                          rel="noopener noreferrer" 
+                          className="text-[10px] text-primary hover:text-secondary uppercase tracking-widest font-bold font-sans transition-colors inline-flex items-center gap-0.5"
+                        >
+                          View on Interactive Google Maps ↗
+                        </a>
+                      </div>
+                    ))}
                   </div>
                 </div>
 
@@ -202,9 +234,9 @@ export default function ContactSection() {
 
         {/* Dynamic & Premium Google Maps Preview Section */}
         <div className="mt-16 border border-rose-gold/15 bg-white p-3 shadow-xl">
-          <div className="relative w-full h-[400px] overflow-hidden bg-warm-ivory group">
+          <div className="relative w-full h-[440px] overflow-hidden bg-warm-ivory group">
             <iframe 
-              src="https://maps.google.com/maps?q=INDO-WEST%20(Below%20Mysore%20Saree%20Udhyog)%20Kamaraj%20Rd%20Bengaluru&t=&z=16&ie=UTF8&iwloc=&output=embed"
+              src={LOCATIONS[activeLocationIndex].embedUrl}
               width="100%" 
               height="100%" 
               style={{ border: 0 }} 
@@ -212,21 +244,39 @@ export default function ContactSection() {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="grayscale-[30%] sepia-[15%] opacity-90 group-hover:opacity-100 group-hover:grayscale-0 transition-all duration-700"
-              title="Indo West Flagship Boutique Google Map Preview"
+              title={`${LOCATIONS[activeLocationIndex].name} Google Map Preview`}
             />
             {/* High-class floating premium card over the Map */}
-            <div className="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-auto bg-charcoal-black text-warm-ivory p-6 md:p-8 max-w-sm border border-rose-gold/25 shadow-2xl backdrop-blur bg-charcoal-black/95">
+            <div className="absolute bottom-6 left-6 right-6 sm:bottom-8 sm:left-8 sm:right-auto bg-charcoal-black text-warm-ivory p-6 md:p-8 max-w-sm border border-rose-gold/25 shadow-2xl backdrop-blur bg-charcoal-black/95 z-10">
               <span className="text-rose-gold font-sans text-[10px] uppercase tracking-[0.3em] font-semibold block mb-2 animate-pulse">
-                Flagship Boutique Location
+                {LOCATIONS[activeLocationIndex].label} Location
               </span>
-              <h4 className="font-editorial text-xl tracking-wide mb-3 font-semibold">
-                Indo West Showroom
+              <h4 className="font-editorial text-lg tracking-wide mb-3 font-semibold text-white">
+                {LOCATIONS[activeLocationIndex].name}
               </h4>
-              <p className="font-sans text-xs text-warm-ivory/80 leading-relaxed mb-6 font-light">
-                Ground Floor, Mahavir Mall, Shop no 1,2,3,4, k, Kamaraj Rd, below Mysore saree udyog 316, opp. to Commercial Street, Bengaluru, Karnataka 560042
+              <p className="font-sans text-[11px] text-warm-ivory/80 leading-relaxed mb-4 font-light">
+                {LOCATIONS[activeLocationIndex].address}
               </p>
+              
+              {/* Interactive Boutique Location Selector Tabs */}
+              <div className="flex gap-1.5 mb-5 border-t border-b border-warm-ivory/10 py-3">
+                {LOCATIONS.map((loc, idx) => (
+                  <button
+                    key={loc.id}
+                    onClick={() => setActiveLocationIndex(idx)}
+                    className={`flex-1 py-2 px-1 text-[9px] uppercase tracking-widest font-bold font-sans transition-all duration-300 text-center border cursor-pointer ${
+                      activeLocationIndex === idx 
+                        ? 'bg-primary text-warm-ivory border-primary shadow-md' 
+                        : 'bg-transparent text-warm-ivory/50 border-warm-ivory/15 hover:text-warm-ivory hover:border-warm-ivory/40'
+                    }`}
+                  >
+                    Loc {idx + 1}
+                  </button>
+                ))}
+              </div>
+
               <a 
-                href="http://google.com/maps/place/INDO-WEST+(Below+Mysore+Saree+Udhyog)/@12.9814812,77.6103771,17z/data=!3m1!5s0x3bae1689aa29045d:0x512e835814138336!4m8!3m7!1s0x3bae17a544fb8ea9:0xc4995bdc825b3d43!8m2!3d12.9814812!4d77.6103771!9m1!1b1!16s%2Fg%2F11j1bg51t_!18m1!1e1?entry=ttu&g_ep=EgoyMDI2MDYxMy4wIKXMDSoASAFQAw%3D%3D" 
+                href={LOCATIONS[activeLocationIndex].mapsUrl} 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="inline-flex items-center justify-center gap-2 bg-primary hover:bg-secondary text-warm-ivory px-5 py-3 font-sans text-xs uppercase tracking-widest font-semibold transition-all duration-300 w-full text-center"

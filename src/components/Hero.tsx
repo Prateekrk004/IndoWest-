@@ -17,10 +17,10 @@ export default function Hero({ onExplore, onWhatsApp }: HeroProps) {
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2O5UmxiZvTps3D2VovezQdsetB3U_r8FiUGTl7TgSgxAQC9GZUnYDg3p9NRLrhyLbKjuseCbmpkfuKQQKNKXQz51yvjo25SQ7_GOJGDoag4_2hGV6KEDnz6nSAQUrpbWsUqjC4CJ2NA"
+          src="https://i.ibb.co/KxKtLQkD/indowest-backgorung.jpg"
           alt="Indo West Premium Collection Model" 
-          className="w-full h-full object-cover object-center scale-105 animate-pulse-slow filter brightness-[0.8]"
-          style={{ animationDuration: '8s' }}
+          className="w-full h-full object-cover scale-105 animate-pulse-slow filter brightness-[0.8]"
+          style={{ objectPosition: 'center 15%', animationDuration: '8s' }}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-charcoal-black/80 via-charcoal-black/40 to-transparent md:bg-gradient-to-r" />
       </div>
@@ -36,6 +36,10 @@ export default function Hero({ onExplore, onWhatsApp }: HeroProps) {
             <p className="font-serif italic text-gold-gradient font-normal text-2xl sm:text-3.5xl md:text-4xl mt-3 tracking-wide">
               Women&apos;s Fashion Store
             </p>
+            <p className="font-serif italic text-[#D8B27A] font-light text-base sm:text-lg md:text-xl mt-4 tracking-widest leading-relaxed">
+              Where tradition meets modern elegance.
+            </p>
+            <div className="w-16 h-[1px] bg-[#D8B27A] mt-5 opacity-60" />
           </div>
           
           {/* Call to action Buttons */}

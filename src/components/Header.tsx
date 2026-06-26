@@ -39,7 +39,7 @@ export default function Header({ currentTab, setCurrentTab, onOpenWishlist }: He
           onClick={() => handleNavClick('home')} 
           className="flex flex-col justify-center cursor-pointer select-none group"
         >
-          <Logo className="h-12 sm:h-14 md:h-16 lg:h-18 w-auto text-primary group-hover:text-secondary transition-colors duration-300" />
+          <Logo className="h-18 sm:h-[80px] md:h-[96px] lg:h-[108px] w-auto my-[-8px] sm:my-[-12px] md:my-[-16px] lg:my-[-20px] text-primary group-hover:text-secondary transition-colors duration-300" />
         </div>
 
         {/* Desktop Navigation */}
@@ -73,7 +73,7 @@ export default function Header({ currentTab, setCurrentTab, onOpenWishlist }: He
           </button>
           
           <button 
-            onClick={() => window.open('https://wa.me/917411279019', '_blank')}
+            onClick={() => window.open('https://wa.me/919173495718', '_blank')}
             className="hidden sm:inline-flex items-center gap-2 bg-primary text-warm-ivory hover:bg-secondary px-3 py-2 md:px-5 md:py-2.5 rounded-none font-sans text-[10px] md:text-xs uppercase tracking-widest font-medium transition-all duration-300 shadow hover:shadow-lg hover:-translate-y-0.5 flex-shrink-0"
           >
             <PhoneCall size={12} className="animate-pulse" />
@@ -108,7 +108,7 @@ export default function Header({ currentTab, setCurrentTab, onOpenWishlist }: He
             ))}
           </div>
           <button 
-            onClick={() => window.open('https://wa.me/917411279019', '_blank')}
+            onClick={() => window.open('https://wa.me/919173495718', '_blank')}
             className="w-full bg-primary text-warm-ivory py-3 flex items-center justify-center gap-2 font-sans text-xs uppercase tracking-widest font-medium"
           >
             <PhoneCall size={14} />

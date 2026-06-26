@@ -63,7 +63,7 @@ export default function CollectionsList({ onSelectProduct, directFilterCategory 
   const handleQuickWhatsApp = (e: React.MouseEvent, p: Product) => {
     e.stopPropagation(); // Stop parent click trigger from launching details
     const text = `Hello, I am interested in the following product:\n\nProduct Name: ${p.name}\n\nCould you please provide more details regarding availability, size options, pricing, and delivery?`;
-    const waUrl = `https://wa.me/917411279019?text=${encodeURIComponent(text)}`;
+    const waUrl = `https://wa.me/919173495718?text=${encodeURIComponent(text)}`;
     window.open(waUrl, '_blank');
   };
 

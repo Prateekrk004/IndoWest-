@@ -99,7 +99,7 @@ export default function App() {
             {/* Landing Banner */}
             <Hero 
               onExplore={() => handleSelectCategory('All')} 
-              onWhatsApp={handleNavbarDirectInquiry}
+              onWhatsApp={() => window.open('https://wa.me/919173495718', '_blank')}
             />
 
             {/* Custom Narrative Story */}
@@ -286,7 +286,7 @@ export default function App() {
                         <button
                           onClick={() => {
                             const text = `Hi Indo West team! I am inquiring about availability of: "${p.name}".`;
-                            window.open(`https://wa.me/917411279019?text=${encodeURIComponent(text)}`, '_blank');
+                            window.open(`https://wa.me/919173495718?text=${encodeURIComponent(text)}`, '_blank');
                           }}
                           className="font-sans text-[9px] uppercase font-bold text-primary hover:text-secondary flex items-center gap-1 mt-2.5 transition-colors"
                         >
@@ -333,7 +333,7 @@ export default function App() {
                   onClick={() => {
                     const names = wishlistedProducts.map((p) => p.name).join(', ');
                     const text = `Hi Indo West team!\n\nI am extremely interested in custom fittings regarding multiple products in my collection wishlist:\n\n✨ Items: ${names}\n\nCould you please guide me on private booking/sizing availability? Thank you!`;
-                    window.open(`https://wa.me/917411279019?text=${encodeURIComponent(text)}`, '_blank');
+                    window.open(`https://wa.me/919173495718?text=${encodeURIComponent(text)}`, '_blank');
                   }}
                   className="w-full bg-primary hover:bg-secondary text-warm-ivory py-4 flex items-center justify-center gap-2 font-sans text-xs uppercase tracking-widest font-semibold transition-all shadow"
                 >

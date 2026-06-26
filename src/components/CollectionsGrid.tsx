@@ -16,21 +16,21 @@ export default function CollectionsGrid({ onSelectCategory }: CollectionsGridPro
       title: 'Indowestern',
       subtitle: 'MODERN FUSION',
       description: 'Sleek, fluid silhouettes and contemporary jackets that effortlessly unite Western cuts and Indian artistry.',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuAZUtElyGSOceieI-h1aijsQPSVCRhbqfPQVuXTMlVwgA-jKg98hZ5OhtUf1s3-o1yvZBhyMhf14ZVRTQnN2V2pevZBlWvSoP-9HH5CCCFxv58Zr_i3P-uDjTFBlovBhr6XaNLowMNk8YWBPED4b0qAKOLNc9UrF9oQaFwMCjhqmxRUh-5qc-bwbDI7_ppbZFPdechi0FqO-dn9wzLLq8pxdgOAOI_JcfoWDff3DTxLIvbhXgdNdU77q1AdgSjxX-TfCSUbEEDv0gyU',
+      image: 'https://i.ibb.co/Q2Yft7v/indowestern-jpg.jpg',
       filterValue: 'Indowestern'
     },
     {
       title: 'Lehengas',
       subtitle: 'ROYAL HERITAGE',
       description: 'Meticulously crafted traditional ensembles and luxury zari veils made for your grandest occasions.',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCmLAxdrOPVOS_Af1WAqhkSh3DcaoFvRHnmbdrYj5DgH4bRn1u1gGAo9qR85I2VlUFmAj3kE0AnHCQNM_E8vdXwTtOIOaAAJvZZiTZVCpqTMqCWRv5KndJ5_3R8f-Mhah45NHK1o_RhI7NF6lLuGggOk47e_PF_JSQb7HzzT0Csy3KaXnnkFg84PBB8HsQJ0AyB47YeYzUerjdXBs32uiN9tdEpiQuehakTP3iG2OigRfYqlP17PLZCeVASTmPukYh7gCRq6vJd_852',
+      image: 'https://i.ibb.co/gnDCFpT/Lehengas-jpg.jpg',
       filterValue: 'Lehengas'
     },
     {
       title: 'Salwar suits | Shararas',
       subtitle: 'CLASSIC COUTURE',
       description: 'Ethereal custom coordinates adorned with fine motif hand embroidery and elegant straight-cut drapes.',
-      image: 'https://lh3.googleusercontent.com/aida-public/AB6AXuCMWzadbbCUDO3cayEvVnJKMhgM_N6KQnrVc2DmkHBoK5KBjpELu8VrsXJ9C02g7OAvEgQJO-LdHahXPxDenI8MdQTDQ1HL1d_XssvZi4csO1G_-CzeE35eRP-2ec479_piM82kcZPxtWKDGd_yvyhBqAy1rhPUTQkGnwRJLsR_winOQ2Jjt5ukmc3pgFoxFUfNcVNLhqI53cfYitLLRQvFvTLAb9sL8XXoJZfsQwPLQs9DLpnSR8Yf3As2WGt90jbGB1z56KEH_F41',
+      image: 'https://i.ibb.co/4w9W27tV/shararas-jpg.jpg',
       filterValue: 'Salwar suits | Shararas'
     }
   ];

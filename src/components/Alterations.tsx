@@ -120,7 +120,7 @@ ${descText}
 I purchased this garment from Indo West and would like to request an alteration. Please guide me regarding the garment drop-off process.`;
 
     // Production contact number
-    const whatsappNumber = '917411279019';
+    const whatsappNumber = '919173495718';
     const encodedMessage = encodeURIComponent(textMessage);
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
 
